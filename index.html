@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AÑÓN</title>
+	<style>
+		#follow-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: Helvetica, "sans-serif";
+			font-size: 300px;
+			font-weight: bold;
+			color: blue;
+			pointer-events: none; /* Make sure the text does not interfere with cursor events */
+			mix-blend-mode: darken;
+		}
+		p {
+			font-family: Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 5px
+		}
+	</style>
+	<script>
+		document.addEventListener('mousemove', function(e) {
+			var followText = document.getElementById('follow-text');
+			followText.style.top = e.clientY + 'px';
+			followText.style.left = e.clientX + 'px';
+		});
+	</script>
+</head>
+<body>
+<p><strong>emilio añón</strong></p>
+<p>Design student in New York City</p>
+<img src="FIT ID.jpg" width="160" alt=""/>
+<div id="follow-text">añón</div>
+</body>
+</html>
