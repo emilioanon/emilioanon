@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+</head>
+	<style>
+		h1{font-family: helvetica, sans serifs;
+			font-size: 24px}
+		
+		p{font-family: helvetica, sans serifs;
+			font-size: 18px;
+			line-height: 4px;}
+		#follow-text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: Helvetica, "sans-serif";
+			font-size: 300px;
+			font-weight: bold;
+			color: red;
+			pointer-events: none; /* Make sure the text does not interfere with cursor events */
+			mix-blend-mode: darken;}
+	</style>
+	<script>
+		document.addEventListener('mousemove', function(e) {
+			var followText = document.getElementById('follow-text');
+			followText.style.top = e.clientY + 'px';
+			followText.style.left = e.clientX + 'px';
+		});
+	</script>
+<body>
+<h1>emilio añón</h1>
+<p>19 years old. Currently living in Manhattan, originally from the Chicagoland area.</p>
+	<p>&nbsp;</p>
+	<p><a href="mailto:emilioanon.com@gmail.com">emilioanon.com@gmail.com</a></p>
+	<p>&nbsp;</p>
+	<p><a href="index.html">back</a></p>
+	<div id="follow-text">añón</div>
+</body>
+</html>
